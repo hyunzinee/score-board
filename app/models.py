@@ -33,13 +33,13 @@ class Match(Base):
 
     match_order = Column(Integer)
 
-    teama_player1_id = Column(Integer)
-    teama_player2_id = Column(Integer)
-    teamb_player1_id = Column(Integer)
-    teamb_player2_id = Column(Integer)
+    team_a_player1_id = Column(Integer)
+    team_a_player2_id = Column(Integer)
+    team_b_player1_id = Column(Integer)
+    team_b_player2_id = Column(Integer)
 
-    scorea = Column(Integer)
-    scoreb = Column(Integer)
+    score_a = Column(Integer)
+    score_b = Column(Integer)
 
     is_tiebreak = Column(Boolean, default=False)
     winner_team = Column(String(1))
